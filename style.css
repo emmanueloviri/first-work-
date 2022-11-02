@@ -1,0 +1,166 @@
+:root {
+  --primaryColor: #19960e;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  background: aquamarine;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+section {
+  padding: 0 2rem;
+  margin-top: 5rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0 20px -12px rgb(0 0 0 / 50%);
+}
+
+header .logo_wrapper {
+  border: 0.3rem solid var(--primaryColor);
+  display: flex;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border-right: none;
+  border-top: none;
+  animation: rotate 5s ease 1s infinite;
+}
+
+header .logo_wrapper img {
+  width: 40px;
+}
+
+header nav {
+  display: none;
+  grid-template-columns: repeat(5, auto);
+  gap: 2rem;
+}
+table{
+  border: 1px solid darkgreen;
+}
+tr{
+  border: 1px solid darkgreen;
+}
+header nav a {
+  color: rgb(148, 179, 56);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.wet{
+  color: rgb(43, 0, 255);
+}
+.land{
+  color: blueviolet;
+}
+.mf{
+  color: lightcoral;
+}
+
+header nav a.active {
+  color: var(--primaryColor);
+}
+/* End Header */
+
+/* Hero Section */
+section.hero {
+  align-items: center;
+}
+
+section.hero .left_side {
+  text-align: center;
+}
+
+section.hero .left_side h1 {
+  font-size: 2rem;
+}
+
+section.hero .left_side p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: rgb(6, 70, 25);
+}
+
+section.hero .left_side button {
+  padding: 0.7rem 3rem;
+  background-color: var(--primaryColor);
+  color: gold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+section.hero .right_side img {
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 3rem;
+}
+/* End Hero Section */
+
+/* About Section */
+/* End About Section */
+
+/* Responsiveness */
+@media screen and (min-width: 640px) {
+  header nav {
+    display: grid;
+  }
+
+  header .icon_wrapper {
+    display: none;
+  }
+
+  /* Hero */
+  section.hero .left_side h1 {
+    font-size: 3rem;
+  }
+  /* End Hero */
+}
+
+@media screen and (min-width: 996px) {
+  section {
+    margin-top: 7rem;
+  }
+
+  /* Hero Section */
+  section.hero {
+    display: flex;
+  }
+
+  section.hero .left_side {
+    text-align: left;
+    padding-right: 3rem;
+  }
+
+  section.hero .right_side img {
+    width: 50vw;
+    max-width: 600px;
+    margin: 0;
+  }
+  /* End Hero Section */
+}
+/* End Responsiveness */
+
+/* Animations */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* End Animations */

@@ -1,0 +1,71 @@
+/* FORM PAGES */
+.form_pages {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form_pages .left_side {
+  padding: 2rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.form_pages .left_side p,
+a {
+  font-size: 1.3rem;
+}
+
+.form_pages .left_side form {
+  display: grid;
+  gap: 1.3rem;
+}
+
+.form_pages .left_side form .input_field {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.form_pages .left_side form .input_field label {
+  font-size: 1.2rem;
+}
+
+.form_pages .left_side form .input_field input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  border: 1px solid #555;
+  border-radius: 0.3rem;
+}
+
+.form_pages .left_side form button {
+  background: #49393c;
+  border: none;
+  color: #fff;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  max-width: 15rem;
+  margin-top: 1rem;
+}
+
+.form_pages .other_options {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.form_pages .other_options a {
+  text-decoration: none;
+}
+
+.form_pages .right_side picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/food_bg.jpg);
+  background-size: cover;
+  background-position: right;
+}
